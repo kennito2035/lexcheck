@@ -1,0 +1,10 @@
+{
+  "name": "dyslexia-prescreening-backend",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "python api_server.py --host 127.0.0.1 --port 8000",
+    "test:pipeline": "python tests/test_pipeline_cli.py"
+  }
+}
+

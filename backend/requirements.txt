@@ -1,0 +1,17 @@
+numpy
+pandas
+Pillow
+opencv-python-headless
+python-dotenv
+pydantic
+rich
+
+joblib; python_version < "3.13"
+scikit-learn; python_version < "3.13"
+matplotlib; python_version < "3.13"
+
+shap; python_version < "3.13"
+grad-cam; python_version < "3.13"
+torch; python_version < "3.13"
+torchvision; python_version < "3.13"
+ultralytics; python_version < "3.13"

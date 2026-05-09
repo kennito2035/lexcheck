@@ -1,0 +1,253 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-bubble), cursive;
+  font-size: 64px;
+  line-height: 1.1;
+  color: #ffd5b0;
+  -webkit-text-stroke: 3px #2b2b2b;
+  text-shadow: 0px 5px 0px #2b2b2b;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  margin: 12px 0 0;
+  color: #555;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.cards {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* Card Neo-Brutalism Variables */
+.card {
+  --stroke: #122942;
+  --fill: #55a6fa;
+  --bg: #e4eefb;
+}
+
+.card[data-variant="green"] {
+  --stroke: #123320;
+  --fill: #17c97f;
+  --bg: #e3faee;
+}
+
+.card[data-variant="purple"] {
+  --stroke: #2e1242;
+  --fill: #a855fa;
+  --bg: #f3e6fc;
+}
+
+.card {
+  width: 100%;
+  background: #ffffff;
+  border: 4px solid var(--stroke);
+  border-radius: 16px;
+  box-shadow: 6px 6px 0px var(--stroke);
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  align-items: center;
+  gap: 24px;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  margin: 0;
+  font-family: var(--font-bubble), cursive;
+  font-size: 52px;
+  line-height: 1.05;
+  color: var(--fill);
+  -webkit-text-stroke: 3px var(--stroke);
+  text-shadow: 0px 4px 0px var(--stroke);
+  letter-spacing: 2px;
+}
+
+.cardText {
+  margin: 16px 0 0;
+  color: #222;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.cardHint {
+  margin: 4px 0 0;
+  color: #888;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.fileName {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: var(--fill);
+  font-weight: 800;
+}
+
+.dropzone {
+  height: 240px;
+  border: 3px dashed var(--fill);
+  border-radius: 12px;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: all 200ms ease;
+}
+
+.dropzone:hover {
+  filter: brightness(0.96);
+}
+
+.tiltedSquare {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: var(--fill);
+  transform: rotate(-8deg);
+  margin-bottom: 8px;
+}
+
+.dropzoneText {
+  margin: 0;
+  font-weight: 800;
+  color: #111;
+  font-size: 14px;
+}
+
+.dropzoneOr {
+  margin: 0;
+  font-size: 12px;
+  color: #111;
+  font-weight: 900;
+}
+
+.browseButton {
+  border: 0;
+  background: var(--fill);
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.hiddenInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.submitBtn {
+  background: #55a6fa;
+  color: #fff;
+  border: 2px solid #122942;
+  padding: 14px 44px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px #122942;
+  transition: all 0.1s ease;
+}
+
+.submitBtn:not(:disabled):hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px #122942;
+}
+
+.submitBtn:not(:disabled):active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px #122942;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 2px 2px 0px #122942;
+}
+
+.backBtn {
+  background: #0B2046;
+  color: #fff;
+  border: 2px solid #0B2046;
+  padding: 14px 44px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px #0B2046;
+  transition: all 0.1s ease;
+}
+
+.backBtn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px #0B2046;
+}
+
+.backBtn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px #0B2046;
+}
+
+.error {
+  margin: 0;
+  padding: 16px;
+  background: #fff0f0;
+  border: 2px solid #da1e28;
+  border-radius: 12px;
+  color: #da1e28;
+  font-size: 15px;
+  font-weight: 800;
+  max-width: 900px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .card {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+}

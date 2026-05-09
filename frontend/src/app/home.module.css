@@ -1,0 +1,238 @@
+.hero {
+  text-align: center;
+  padding: 60px 24px;
+  margin: -24px auto 32px;
+  background: #ffffff;
+  border: 2px solid #122942;
+  box-shadow: 4px 4px 0px #122942;
+  border-radius: 16px;
+  max-width: 1040px;
+}
+
+.heroContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  margin: 0;
+  font-family: var(--font-bubble), cursive;
+  font-size: 64px;
+  line-height: 1.1;
+  color: #ffd5b0;
+  -webkit-text-stroke: 2px #122942;
+  text-shadow: 0px 4px 0px #122942;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+.heroSubtitle {
+  margin: 0;
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+.heroDescription {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: #55a6fa;
+  color: #ffffff;
+  padding: 14px 40px;
+  border: 2px solid #122942;
+  box-shadow: 2px 2px 0px #122942;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  transition: all 150ms ease;
+}
+
+.ctaButton:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px #122942;
+}
+.ctaButton:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px #122942;
+}
+
+.sectionTitle {
+  font-size: 36px;
+  line-height: 1.1;
+  color: #111;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.features {
+  margin-bottom: 48px;
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.featureCard {
+  background: #ffffff;
+  border: 2px solid #122942;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0px #122942;
+  padding: 28px 24px;
+  text-align: center;
+  transition: all 150ms ease;
+}
+
+.featureCard:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #122942;
+}
+
+.featureIcon {
+  font-size: 40px;
+  margin: 0 auto 16px;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 2px solid #122942;
+}
+
+.featureCard:nth-child(1) .featureIcon { background: #e3faee; }
+.featureCard:nth-child(2) .featureIcon { background: #e4eefb; }
+.featureCard:nth-child(3) .featureIcon { background: #f3e6fc; }
+
+.featureCard h3 {
+  margin: 0 0 12px;
+  color: #111;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.featureCard p {
+  margin: 0;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.research {
+  background: #e4eefb;
+  border: 2px solid #122942;
+  box-shadow: 4px 4px 0px #122942;
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 48px;
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.researchContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.researchContent p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.disclaimer {
+  background: #ffffff;
+  border: 2px solid #122942;
+  box-shadow: 3px 3px 0px #122942;
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+}
+
+.cta {
+  text-align: center;
+  padding: 40px;
+  background: #17c97f;
+  border: 2px solid #123320;
+  box-shadow: 4px 4px 0px #123320;
+  border-radius: 16px;
+  color: #ffffff;
+  margin-top: 48px;
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta h2 {
+  margin: 0 0 12px;
+  font-size: 32px;
+  color: #ffffff;
+  -webkit-text-stroke: 1.5px #123320;
+  font-weight: 900;
+}
+
+.cta p {
+  margin: 0 0 24px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #123320;
+}
+
+.ctaButtonLarge {
+  display: inline-block;
+  background: #ffffff;
+  color: #123320;
+  padding: 16px 40px;
+  border: 2px solid #123320;
+  box-shadow: 2px 2px 0px #123320;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  transition: all 150ms ease;
+}
+
+.ctaButtonLarge:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0px #123320;
+}
+.ctaButtonLarge:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px #123320;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 24px;
+  }
+  .heroTitle {
+    font-size: 42px;
+  }
+  .sectionTitle {
+    font-size: 28px;
+  }
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+}

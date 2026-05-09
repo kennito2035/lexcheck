@@ -1,0 +1,27 @@
+{
+  "name": "dyslexia-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "next": "16.2.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.2.6",
+    "typescript": "^5.4.0"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
+  }
+}

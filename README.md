@@ -9,6 +9,10 @@ LexCheck is a research-grade dyslexia pre-screening demo with:
 
 This is a pre-screening indicator only. It is not a diagnosis.
 
+## Architecture
+
+![LexCheck architecture](./lexcheck_architecture.png)
+
 ## Repo Layout
 
 - `frontend` — Next.js frontend (upload + report UI)
